@@ -1,0 +1,2 @@
+export type AccessContext={authenticated:boolean;activeMembership:boolean;hasGrant:boolean;purpose?: "care"|"handoff"|"ai_assistance"};
+export function canReadHealth(c:AccessContext){return c.authenticated&&c.activeMembership&&c.hasGrant&&!!c.purpose;}
