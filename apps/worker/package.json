@@ -1,1 +1,6 @@
-{"name":"@fithit/worker","private":true,"scripts":{"dev":"tsx src/worker.ts","build":"tsc","lint":"eslint src","typecheck":"tsc --noEmit","test":"vitest run","boundaries":"node ../../tooling/check-boundaries.mjs"},"dependencies":{"@supabase/supabase-js":"^2.57.4"},"devDependencies":{"typescript":"^5.9.2","tsx":"^4.20.5","eslint":"^9.35.0","vitest":"^3.2.4"}}
+{
+  "name":"@fithit/worker","private":true,
+  "scripts":{"dev":"tsx src/worker.ts","build":"tsc","lint":"eslint src","typecheck":"tsc --noEmit","test":"vitest run","boundaries":"node ../../tooling/check-boundaries.mjs"},
+  "dependencies":{"@supabase/supabase-js":"^2.57.4"},
+  "devDependencies":{"typescript":"^5.9.2","tsx":"^4.20.5","eslint":"^9.35.0","vitest":"^3.2.4","@types/node":"^22.18.6"}
+}
