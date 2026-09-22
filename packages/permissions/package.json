@@ -1,1 +1,1 @@
-{"name":"@fithit/permissions","private":true,"scripts":{"build":"tsc","typecheck":"tsc --noEmit","test":"vitest run"},"dependencies":{"@fithit/domain":"workspace:*"},"devDependencies":{"typescript":"^5.9.2","vitest":"^3.2.4"}}
+{"name":"@fithit/permissions","private":true,"main":"./dist/index.js","types":"./dist/index.d.ts","exports":{".":{"types":"./dist/index.d.ts","default":"./dist/index.js"}},"scripts":{"build":"tsc","typecheck":"tsc --noEmit","test":"vitest run"},"dependencies":{"@fithit/domain":"workspace:*"},"devDependencies":{"typescript":"^5.9.2","vitest":"^3.2.4"}}
