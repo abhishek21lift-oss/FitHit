@@ -1,2 +1,4 @@
-export type AccessContext={authenticated:boolean;activeMembership:boolean;hasGrant:boolean;purpose?: "care"|"handoff"|"ai_assistance"};
-export function canReadHealth(c:AccessContext){return c.authenticated&&c.activeMembership&&c.hasGrant&&!!c.purpose;}
+import {decideHealthRead,type AccessPurpose,type AccessDecision} from "@fithit/domain";
+export {decideHealthRead};
+export type {AccessPurpose,AccessDecision};
+export function canReadHealth(ctx:{authenticated:boolean;activeMembership:boolean;hasGrant:boolean;purpose?:AccessPurpose}){return decideHealthRead({authenticated:ctx.authenticated,activeMembership:ctx.activeMembership,effectiveGrant:ctx.hasGrant,purpose:ctx.purpose}).allowed;}
